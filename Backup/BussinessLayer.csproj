@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C8F23D5E-4854-4379-95E6-EA9B72D73347}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BussinessLayer</RootNamespace>
+    <AssemblyName>BussinessLayer</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommonInterfacce\IPrcCommonMethods.cs" />
+    <Compile Include="CommonUtilities\clsCommonUtilities.cs" />
+    <Compile Include="CommonUtilities\DataUtil.cs" />
+    <Compile Include="MasterEntity\clsClientContactMethods.cs" />
+    <Compile Include="MasterEntity\clsClientContactProperties.cs" />
+    <Compile Include="MasterEntity\clsClientMethods.cs" />
+    <Compile Include="MasterEntity\clsClientProperties.cs" />
+    <Compile Include="MasterEntity\clsContractorContactMethods.cs" />
+    <Compile Include="MasterEntity\clsContractorContactProperties.cs" />
+    <Compile Include="MasterEntity\clsContractorMethods.cs" />
+    <Compile Include="MasterEntity\clsContractorProperties.cs" />
+    <Compile Include="MasterEntity\clsEngineerMethods.cs" />
+    <Compile Include="MasterEntity\clsEngineerProperties.cs" />
+    <Compile Include="MasterEntity\clsGeneratedInvoiceProperties.cs" />
+    <Compile Include="MasterEntity\clsGenerateInvoiceMethods.cs" />
+    <Compile Include="MasterEntity\clsInspectionScheduleMappingProperties.cs" />
+    <Compile Include="MasterEntity\clsInspectionScheduleMappingMethods.cs" />
+    <Compile Include="MasterEntity\clsIntermediaryContactMethods.cs" />
+    <Compile Include="MasterEntity\clsIntermediaryContactProperties.cs" />
+    <Compile Include="MasterEntity\clsIntermediaryMethods.cs" />
+    <Compile Include="MasterEntity\clsIntermediaryProperties.cs" />
+    <Compile Include="MasterEntity\clsInvoiceMethods.cs" />
+    <Compile Include="MasterEntity\clsInvoiceProperties.cs" />
+    <Compile Include="MasterEntity\clsOurProposalMethods.cs" />
+    <Compile Include="MasterEntity\clsOurProposalProperties.cs" />
+    <Compile Include="MasterEntity\clsPaymentMadeMethods.cs" />
+    <Compile Include="MasterEntity\clsPaymentMadeProperties.cs" />
+    <Compile Include="MasterEntity\clsProjectDrawingMethods.cs" />
+    <Compile Include="MasterEntity\clsProjectDrawingProperties.cs" />
+    <Compile Include="MasterEntity\clsProjectInspectionMappingMethods.cs" />
+    <Compile Include="MasterEntity\clsProjectInspectionMappingProperties.cs" />
+    <Compile Include="MasterEntity\clsProjectMethods.cs" />
+    <Compile Include="MasterEntity\clsProjectMissingDocMethods.cs" />
+    <Compile Include="MasterEntity\clsProjectMissingDocProperties.cs" />
+    <Compile Include="MasterEntity\clsProjectProperties.cs" />
+    <Compile Include="MasterEntity\clsProjectProposalMethods.cs" />
+    <Compile Include="MasterEntity\clsProjectProposalProperties.cs" />
+    <Compile Include="MasterEntity\clsProjectRemindersMethods.cs" />
+    <Compile Include="MasterEntity\clsProjectRemindersProperties.cs" />
+    <Compile Include="MasterEntity\clsProjectScopeWorkMethods.cs" />
+    <Compile Include="MasterEntity\clsProjectScopeWorkProperties.cs" />
+    <Compile Include="MasterEntity\clsProjectSignOnMethods.cs" />
+    <Compile Include="MasterEntity\clsProjectSignOnProperties.cs" />
+    <Compile Include="MasterEntity\clsProjectUploadEngineerInvoiceMethods.cs" />
+    <Compile Include="MasterEntity\clsProjectUploadEngineerInvoiceProperties.cs" />
+    <Compile Include="MasterEntity\clsProjectUploadInspectionMethods.cs" />
+    <Compile Include="MasterEntity\clsProjectUploadInspectionProperties.cs" />
+    <Compile Include="MasterEntity\clsProjectUploadOtherDocMethods.cs" />
+    <Compile Include="MasterEntity\clsProjectUploadOtherDocProperties.cs" />
+    <Compile Include="MasterEntity\clsProjectUploadPOMethods.cs" />
+    <Compile Include="MasterEntity\clsProjectUploadPOProperties.cs" />
+    <Compile Include="MasterEntity\clsProjectUploadSingOffMethods.cs" />
+    <Compile Include="MasterEntity\clsProjectUploadSingOffProperties.cs" />
+    <Compile Include="MasterEntity\clsProjectEngineerMethods.cs" />
+    <Compile Include="MasterEntity\clsProjectEngineerProperties.cs" />
+    <Compile Include="MasterEntity\clsRebuttleMgmtMethods.cs" />
+    <Compile Include="MasterEntity\clsRebuttleMgmtProperties.cs" />
+    <Compile Include="OtherEntity\clsLoginMethods.cs" />
+    <Compile Include="OtherEntity\clsLoginProperties.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TrueVisionFramework3.5\TrueVisionFramework3.5.csproj">
+      <Project>{69990345-99CD-488A-867B-404D9565BAC8}</Project>
+      <Name>TrueVisionFramework3.5</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\BussinessLayer.dll" />
+    <Content Include="bin\Debug\BussinessLayer.pdb" />
+    <Content Include="bin\Debug\TrueVisionFramework3.5.dll" />
+    <Content Include="bin\Debug\TrueVisionFramework3.5.pdb" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
